@@ -4,15 +4,27 @@
  <title>   
      World Religions
  </title>
+  <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
 </head>
-<body>
+<body> 
  <header>
-     
+    <h1> World Religions</h1>
+    <h3>What do you want to know about?</h3>
  </header>
  <main>
-
-    
- </main>
+  <p></p>
+    <form action="/religion">
+      <label for="religion">Choose a religion:</label>
+      <select name="religion" id="religion">
+        <option value="Christianity ">Christianity </option>
+        <option value="Islam">Islam</option>
+        <option value="Hinduism">Hinduism</option>
+        <option value="Buddhism">Buddhism</option>
+      </select>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </main>
 
 
 </body>

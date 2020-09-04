@@ -10,7 +10,10 @@ def home():
   return render_template("index.html")
 
 
+@app.route("/religion")
+def religion(value):
 
+  return render_template("religion.html")
 
 
 

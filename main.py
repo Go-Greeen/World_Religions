@@ -10,10 +10,24 @@ def home():
   return render_template("index.html")
 
 
-@app.route("/religion")
-def religion(value):
+@app.route("/christianity")
+def christianity():
+  return render_template("christianity.html")
 
-  return render_template("religion.html")
+
+@app.route("/islam")
+def islam():
+  return render_template("islam.html")
+
+
+@app.route("/hinduism")
+def hinduism():
+  return render_template("hinduism.html")
+
+
+@app.route("/buddhism")
+def buddhism():
+  return render_template("buddhism.html")
 
 
 

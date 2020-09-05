@@ -5,6 +5,19 @@
      World Religions
  </title>
   <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
+  <style>
+    div { 
+      width: 50%; height: 50%; float: left;
+      
+       }
+    form { 
+      background: #DDD;
+      text-align: center;
+     }
+   
+      
+ 
+  </style>
 </head>
 <body> 
  <header>
@@ -12,21 +25,30 @@
     <h3>What do you want to know about?</h3>
  </header>
  <main>
-  <p></p>
-    <form action="/religion">
-      <label for="religion">Choose a religion:</label>
-      <select name="religion" id="religion">
-        <option value="Christianity ">Christianity </option>
-        <option value="Islam">Islam</option>
-        <option value="Hinduism">Hinduism</option>
-        <option value="Buddhism">Buddhism</option>
+  <div id="div1">
+    <form action="/christianity">
+    <button value="Christianity">Christianity </button>
+    </form>
+  </div>
+  <div id="div2">
+    <form action="/islam">
+    <button value="Islam">Islam</button>
+    </form>
+  </div>
+  <div id="div3">
+    <form action="/hinduism">
+    <button value="Hinduism">Hinduism</button>
+    </form>
+  </div>
+  <div id="div4">
+    <form action="/buddhism">
+    <button value="Buddhism">Buddhism</button>
+    </form>
+  </div>     
       </select>
-      <br>
-      <input type="submit" value="Submit">
+ 
     </form>
   </main>
-
-
 </body>
 
 

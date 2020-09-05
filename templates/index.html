@@ -7,7 +7,7 @@
   <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
   <style>
     div { 
-      width: 50%; height: 50%; float: left;
+      width: 50%; height: 50%; display: flex;
       
        }
     form { 
@@ -25,15 +25,20 @@
     <h3>What do you want to know about?</h3>
  </header>
  <main>
-  <div id="div1">
-    <form action="/christianity">
+  <div class="split left" id="div1">
+    <div class="centered">
+    <form action="/christianity" >
+    <img src="cross.jpg" width="100" height="100">
     <button value="Christianity">Christianity </button>
     </form>
+    </div>
   </div>
-  <div id="div2">
+  <div class="split right" id="div2">
+    <div class="centered">
     <form action="/islam">
     <button value="Islam">Islam</button>
     </form>
+    </div>
   </div>
   <div id="div3">
     <form action="/hinduism">

@@ -6,11 +6,16 @@
  </title>
   <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
   <style>
-    div { 
-      width: 50%; height: 50%; display: flex;
-      
-       }
-    form { 
+    body{
+      height:100%; padding:0; margin: 0;
+    }
+    div {
+      width:50%; 
+      height:50%; 
+      float:left;
+      text-align: center;
+      }
+    button { 
       background: #DDD;
       text-align: center;
      }
@@ -25,35 +30,31 @@
     <h3>What do you want to know about?</h3>
  </header>
  <main>
-  <div class="split left" id="div1">
-    <div class="centered">
-    <form action="/christianity" >
-    <img src="cross.jpg" width="100" height="100">
-    <button value="Christianity">Christianity </button>
-    </form>
-    </div>
+  <section>
+  <div action="/christianity" id="div1">
+        <button value="Christianity">
+          <img src="cross.png" width=200 height=200>Christianity
+        </button>             
   </div>
-  <div class="split right" id="div2">
-    <div class="centered">
-    <form action="/islam">
-    <button value="Islam">Islam</button>
-    </form>
-    </div>
+
+  <div action="/islam" id="div2">
+      <button value="Islam">
+        <img src="islam.png" width=200 height=200>Islam
+      </button>
   </div>
-  <div id="div3">
-    <form action="/hinduism">
-    <button value="Hinduism">Hinduism</button>
-    </form>
+
+  <div action="/hinduism" id="div3">
+    <button value="Hinduism">
+      <img src="hinduism.png" width=200 height=200>Hinduism
+    </button>
   </div>
-  <div id="div4">
-    <form action="/buddhism">
-    <button value="Buddhism">Buddhism</button>
-    </form>
+  <div action="/buddhism" id="div4">
+    <button value="Buddhism">
+      <img src="buddhism.png" width=200 height=200>
+      Buddhism</button>
   </div>     
-      </select>
- 
-    </form>
   </main>
+</section>
 </body>
 
 

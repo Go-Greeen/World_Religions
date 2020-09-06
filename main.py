@@ -1,8 +1,9 @@
 import requests
 from flask import Flask, render_template, request
 from bs4 import BeautifulSoup
+from scrapper import christianity_text
 
-db = []
+db = {}
 app = Flask("World Religions")
 
 
@@ -15,7 +16,10 @@ def home():
 
 @app.route("/christianity")
 def christianity():
-  return render_template("christianity.html")
+  c_text = christianity_text()
+  db[christianity] = c_text
+  text = db[christianity]
+  return render_template("christianity.html", db_text=text)
 
 
 @app.route("/islam")
